@@ -1,2 +1,2 @@
 # DigitalCore
-Projeto TI2 - Loja virtual
+Projeto TI2 - Loja Virtual
