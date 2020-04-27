@@ -11,8 +11,16 @@ namespace DigitalCore.Models
     /// </summary>
     public class TipoPagamento
     {
+
+        public TipoPagamento()
+        {
+            // inicializar a lista de compras
+            ListaDeCompras = new HashSet<Compra>();
+        }
+
+
         /// <summary>
-        /// PK da tabela
+        /// PK da tabela 
         /// </summary>
         [Key] // Anotação que força este atributo a ser PK. Mas, não seria necessário, pq o atributo chama-se "ID"
         public int ID { set; get; }
@@ -21,5 +29,13 @@ namespace DigitalCore.Models
         /// Descrição/identificação do Tipo de pagamento
         /// </summary>
         public string Descricao { get; set; }
+
+
+        /// <summary>
+        /// Lista as compras efetuadas com um TipoPagamento
+        /// Um TipoPagamento tem uma coleção de Compras
+        /// </summary>      
+        public virtual ICollection<Compra> ListaDeCompras { get; set; } //TipoPagamento----->Compra
+
     }
 }
