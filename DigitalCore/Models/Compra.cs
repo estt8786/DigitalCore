@@ -44,20 +44,19 @@ namespace DigitalCore.Models
 
 
         /// <summary>
+        /// Método de Pagamento
+        /// </summary>
+        public string TipoPagamento { get; set; }
+        
+
+        /// <summary>
         /// FK para a tabela Cliente
         /// </summary>
         [ForeignKey(nameof(Cliente))]
         public int ClienteFK { get; set; }
         public virtual Cliente Cliente { get; set; }
 
-        /// <summary>
-        /// FK para a tabela TipoPagamento
-        /// </summary>
-        [ForeignKey(nameof(TipoPagamento))]
-        public int PagamentoFK { get; set; }
-        public virtual TipoPagamento TipoPagamento { get; set; }
-
-
+        
         /// <summary>
         /// Lista das caracteristicas de um Produto
         /// </summary>      

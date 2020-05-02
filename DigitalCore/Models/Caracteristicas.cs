@@ -13,7 +13,7 @@ namespace DigitalCore.Models
         public Caracteristicas()
         {
             // inicializar a lista de características de um 'TipoProduto'
-            ListaDeProdutos = new HashSet<Produto>();
+            ListaDeProdutosCaracteristicas = new HashSet<CaracteristicasProduto>();
         }
 
         /// <summary>
@@ -34,17 +34,9 @@ namespace DigitalCore.Models
 
 
         /// <summary>
-        /// FK para a tabela TipoProduto
-        /// </summary>
-        [ForeignKey(nameof(TipoProduto))]
-        public int TipoProdutoFK { get; set; }
-        public virtual TipoProduto TipoProduto { get; set; }
-
-
-        /// <summary>
-        /// Lista das caracteristicas de um Produto
+        /// Lista das caracteristicas/Produto de um Produto
         /// </summary>      
-        public virtual ICollection<Produto> ListaDeProdutos { get; set; }
+        public virtual ICollection<CaracteristicasProduto> ListaDeProdutosCaracteristicas { get; set; }
 
     }
 }
