@@ -14,6 +14,8 @@ namespace DigitalCore.Models
         {
             // inicializar a lista de Características/Produto associados a um 'Produto'
             ListaDeCaracteristicasProduto = new HashSet<CaracteristicasProduto>();
+            // inicializar a lista de Imagens associados a um 'Produto'
+            ListaDeImagensdeUmProduto = new HashSet<Imagem>();
         }
 
         /// <summary>
@@ -72,5 +74,10 @@ namespace DigitalCore.Models
         /// Lista das caracteristicas de um Produto
         /// </summary>      
         public virtual ICollection<CaracteristicasProduto> ListaDeCaracteristicasProduto { get; set; }
+
+        /// <summary>
+        /// Lista das imagens de um Produto
+        /// </summary>      
+        public virtual ICollection<Imagem> ListaDeImagensdeUmProduto { get; set; }
     }
 }

@@ -789,7 +789,7 @@ namespace DigitalCore.Migrations
             modelBuilder.Entity("DigitalCore.Models.Imagem", b =>
                 {
                     b.HasOne("DigitalCore.Models.Produto", "Produto")
-                        .WithMany()
+                        .WithMany("ListaDeImagensdeUmProduto")
                         .HasForeignKey("ProdutoFK")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

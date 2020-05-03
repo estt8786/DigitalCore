@@ -15,6 +15,8 @@
     <Compile Remove="Migrations\20200503090455_novaMigrationCommit.Designer.cs" />
     <Compile Remove="Migrations\20200503091111_novaMigrationCommit.cs" />
     <Compile Remove="Migrations\20200503091111_novaMigrationCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200503093032_novaMigrationCommit.cs" />
+    <Compile Remove="Migrations\20200503093032_novaMigrationCommit.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigitalCore.Migrations
 {
     [DbContext(typeof(DigitalCoreDB))]
-    [Migration("20200503093032_novaMigrationCommit")]
+    [Migration("20200503110904_novaMigrationCommit")]
     partial class novaMigrationCommit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -791,7 +791,7 @@ namespace DigitalCore.Migrations
             modelBuilder.Entity("DigitalCore.Models.Imagem", b =>
                 {
                     b.HasOne("DigitalCore.Models.Produto", "Produto")
-                        .WithMany()
+                        .WithMany("ListaDeImagensdeUmProduto")
                         .HasForeignKey("ProdutoFK")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

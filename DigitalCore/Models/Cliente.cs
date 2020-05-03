@@ -8,6 +8,12 @@ namespace DigitalCore.Models
 {
     public class Cliente
     {
+        public Cliente()
+        {
+            // inicializar a lista de compras
+            ListaCompras = new HashSet<Compra>();
+        }
+
         /// <summary>
         /// PK da tabela
         /// </summary>
