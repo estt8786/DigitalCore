@@ -5,6 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200502120656_novaMigrationCommit.cs" />
+    <Compile Remove="Migrations\20200502120656_novaMigrationCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200503082105_novaMigrationCommit.cs" />
+    <Compile Remove="Migrations\20200503082105_novaMigrationCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200503084700_novaMigrationCommit.cs" />
+    <Compile Remove="Migrations\20200503084700_novaMigrationCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200503090455_novaMigrationCommit.cs" />
+    <Compile Remove="Migrations\20200503090455_novaMigrationCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200503091111_novaMigrationCommit.cs" />
+    <Compile Remove="Migrations\20200503091111_novaMigrationCommit.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
       <PrivateAssets>all</PrivateAssets>

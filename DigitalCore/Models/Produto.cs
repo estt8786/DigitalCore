@@ -25,7 +25,7 @@ namespace DigitalCore.Models
         /// <summary>
         /// Descrição do Produto
         /// </summary>
-        public string Descrição { get; set; }
+        public string Descricao { get; set; }
 
         /// <summary>
         /// Número de série do Produto

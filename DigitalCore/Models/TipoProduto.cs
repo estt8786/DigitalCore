@@ -14,8 +14,7 @@ namespace DigitalCore.Models
             // inicializar a lista de produtos comprados
             ListaDeProdutos = new HashSet<Produto>();
 
-            // inicializar a lista de produtos comprados
-            ListaDeCaracteristicas = new HashSet<Caracteristicas>();
+            
         }
 
 
@@ -35,11 +34,6 @@ namespace DigitalCore.Models
         /// Lista os Produtos de um TipoProdutos
         /// </summary>      
         public virtual ICollection<Produto> ListaDeProdutos { get; set; } //Produtos----->TipoProdutos
-
-        /// <summary>
-        /// Lista as caracteristicas de um Produto
-        /// </summary>      
-        public virtual ICollection<Caracteristicas> ListaDeCaracteristicas { get; set; } //Características----->Produto
 
     }
 }

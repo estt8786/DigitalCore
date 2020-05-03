@@ -27,11 +27,6 @@ namespace DigitalCore.Models
         /// </summary>
         public string Designacao { get; set; }
 
-        /// <summary>
-        /// Função do Produto
-        /// </summary>
-        public string Funcao { get; set; }
-
 
         /// <summary>
         /// Lista das caracteristicas/Produto de um Produto
