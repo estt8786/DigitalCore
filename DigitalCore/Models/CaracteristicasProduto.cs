@@ -21,7 +21,7 @@ namespace DigitalCore.Models
         /// <summary>
         /// Descrição/identificação do Valor do Produto com as Características
         /// </summary>
-        public string Valor { get; set; }
+        public double Valor { get; set; }
 
 
         /// <summary>

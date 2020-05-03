@@ -1,0 +1,41 @@
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 3.1.2
+
+
+
+
+
+// CARREGAR --> Data --> DigitalCoreDB.cs
+//
+//
+public DigitalCoreDB(DbContextOptions<DigitalCoreDB> options): base(options) { }
+  
+  
+  
+  
+// CARREGAR --> Startup.cs
+//   
+//
+public void ConfigureServices(IServiceCollection services) {
+   
+   services.AddControllersWithViews();
+
+   //****************************************************************************
+   // especificação do 'tipo' e 'localização' da BD
+   services.AddDbContext<DigitalCoreDB>(options =>
+      options.UseSqlServer(
+          Configuration.GetConnectionString("ConnectionDB")));
+   //****************************************************************************
+
+}
+     
+     
+  
+// CARREGAR --> appsettings.json
+// 
+//
+"ConnectionStrings": {
+   "ConnectionDB": "Server=(localdb)\\mssqllocaldb;Database=DigitalCoreDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+},
+
