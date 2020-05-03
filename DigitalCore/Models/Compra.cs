@@ -40,7 +40,7 @@ namespace DigitalCore.Models
         /// <summary>
         /// Código Postal do Cliente para entrega do Produto
         /// </summary>
-        public string CodPostal { get; set; }
+        public string CodPostalEntrega { get; set; }
 
 
         /// <summary>

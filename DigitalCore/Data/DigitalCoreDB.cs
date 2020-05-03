@@ -104,12 +104,12 @@ namespace DigitalCore.Data
               );
 
             modelBuilder.Entity<Compra>().HasData(
-               new Compra { ID = 1, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 1, TipoPagamento = "Cartão de Crédito", MoradaEntrega = "Rua Amorim Rosa, Nº213", CodPostal = "2300-453" },
-               new Compra { ID = 2, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 3, TipoPagamento = "PayPal", MoradaEntrega = "Av. Dr. Egas Moniz, Nº14", CodPostal = "2300-745" },
-               new Compra { ID = 3, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 6, TipoPagamento = "Referência Multibanco", MoradaEntrega = "Rua 13 de Fevereiro, Nº28", CodPostal = "2300-345" },
-               new Compra { ID = 4, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 1, TipoPagamento = "Referência Multibanco", MoradaEntrega = "Rua José Raimundo Rineiro, Nº54", CodPostal = "2300-856" },
-               new Compra { ID = 5, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 2, TipoPagamento = "Transferência Bancária", MoradaEntrega = "Rua Serpa Pinto, Nº97", CodPostal = "2300-185" },
-               new Compra { ID = 6, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 4, TipoPagamento = "Transferência Bancária", MoradaEntrega = "Rua da Alcântara, Nº142", CodPostal = "2300-743" }
+               new Compra { ID = 1, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 1, TipoPagamento = "Cartão de Crédito", MoradaEntrega = "Rua Amorim Rosa, Nº213", CodPostalEntrega = "2300-453" },
+               new Compra { ID = 2, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 3, TipoPagamento = "PayPal", MoradaEntrega = "Av. Dr. Egas Moniz, Nº14", CodPostalEntrega = "2300-745" },
+               new Compra { ID = 3, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 6, TipoPagamento = "Referência Multibanco", MoradaEntrega = "Rua 13 de Fevereiro, Nº28", CodPostalEntrega = "2300-345" },
+               new Compra { ID = 4, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 1, TipoPagamento = "Referência Multibanco", MoradaEntrega = "Rua José Raimundo Rineiro, Nº54", CodPostalEntrega = "2300-856" },
+               new Compra { ID = 5, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 2, TipoPagamento = "Transferência Bancária", MoradaEntrega = "Rua Serpa Pinto, Nº97", CodPostalEntrega = "2300-185" },
+               new Compra { ID = 6, DataCompra = new DateTime(2020, 05, 06), DataEntrega = new DateTime(2020, 05, 07), ClienteFK = 4, TipoPagamento = "Transferência Bancária", MoradaEntrega = "Rua da Alcântara, Nº142", CodPostalEntrega = "2300-743" }
                );
         }
 

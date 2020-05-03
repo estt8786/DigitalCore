@@ -63,7 +63,7 @@ namespace DigitalCore.Migrations
                     DataCompra = table.Column<DateTime>(nullable: false),
                     DataEntrega = table.Column<DateTime>(nullable: false),
                     MoradaEntrega = table.Column<string>(nullable: true),
-                    CodPostal = table.Column<string>(nullable: true),
+                    CodPostalEntrega = table.Column<string>(nullable: true),
                     TipoPagamento = table.Column<string>(nullable: true),
                     ClienteFK = table.Column<int>(nullable: false)
                 },
@@ -218,7 +218,7 @@ namespace DigitalCore.Migrations
 
             migrationBuilder.InsertData(
                 table: "Compra",
-                columns: new[] { "ID", "ClienteFK", "CodPostal", "DataCompra", "DataEntrega", "MoradaEntrega", "TipoPagamento" },
+                columns: new[] { "ID", "ClienteFK", "CodPostalEntrega", "DataCompra", "DataEntrega", "MoradaEntrega", "TipoPagamento" },
                 values: new object[,]
                 {
                     { 1, 1, "2300-453", new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "Rua Amorim Rosa, Nº213", "Cartão de Crédito" },

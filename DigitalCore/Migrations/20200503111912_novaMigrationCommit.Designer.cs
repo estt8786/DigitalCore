@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigitalCore.Migrations
 {
     [DbContext(typeof(DigitalCoreDB))]
-    [Migration("20200503110904_novaMigrationCommit")]
+    [Migration("20200503111912_novaMigrationCommit")]
     partial class novaMigrationCommit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -347,7 +347,7 @@ namespace DigitalCore.Migrations
                     b.Property<int>("ClienteFK")
                         .HasColumnType("int");
 
-                    b.Property<string>("CodPostal")
+                    b.Property<string>("CodPostalEntrega")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DataCompra")
@@ -373,7 +373,7 @@ namespace DigitalCore.Migrations
                         {
                             ID = 1,
                             ClienteFK = 1,
-                            CodPostal = "2300-453",
+                            CodPostalEntrega = "2300-453",
                             DataCompra = new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DataEntrega = new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             MoradaEntrega = "Rua Amorim Rosa, Nº213",
@@ -383,7 +383,7 @@ namespace DigitalCore.Migrations
                         {
                             ID = 2,
                             ClienteFK = 3,
-                            CodPostal = "2300-745",
+                            CodPostalEntrega = "2300-745",
                             DataCompra = new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DataEntrega = new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             MoradaEntrega = "Av. Dr. Egas Moniz, Nº14",
@@ -393,7 +393,7 @@ namespace DigitalCore.Migrations
                         {
                             ID = 3,
                             ClienteFK = 6,
-                            CodPostal = "2300-345",
+                            CodPostalEntrega = "2300-345",
                             DataCompra = new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DataEntrega = new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             MoradaEntrega = "Rua 13 de Fevereiro, Nº28",
@@ -403,7 +403,7 @@ namespace DigitalCore.Migrations
                         {
                             ID = 4,
                             ClienteFK = 1,
-                            CodPostal = "2300-856",
+                            CodPostalEntrega = "2300-856",
                             DataCompra = new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DataEntrega = new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             MoradaEntrega = "Rua José Raimundo Rineiro, Nº54",
@@ -413,7 +413,7 @@ namespace DigitalCore.Migrations
                         {
                             ID = 5,
                             ClienteFK = 2,
-                            CodPostal = "2300-185",
+                            CodPostalEntrega = "2300-185",
                             DataCompra = new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DataEntrega = new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             MoradaEntrega = "Rua Serpa Pinto, Nº97",
@@ -423,7 +423,7 @@ namespace DigitalCore.Migrations
                         {
                             ID = 6,
                             ClienteFK = 4,
-                            CodPostal = "2300-743",
+                            CodPostalEntrega = "2300-743",
                             DataCompra = new DateTime(2020, 5, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DataEntrega = new DateTime(2020, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             MoradaEntrega = "Rua da Alcântara, Nº142",
