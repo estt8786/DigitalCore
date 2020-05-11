@@ -10,6 +10,9 @@ using DigitalCore.Models;
 
 namespace DigitalCore.Controllers
 {
+    /// <summary>
+    /// Alteração do Controller p/ Gerir como vão ser apresentados os Produtos em Categorias
+    /// </summary>
     public class ProdutosController : Controller
     {
         private readonly DigitalCoreDB _context;
