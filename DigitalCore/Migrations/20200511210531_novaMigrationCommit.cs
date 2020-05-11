@@ -88,7 +88,7 @@ namespace DigitalCore.Migrations
                     NumSerie = table.Column<string>(nullable: true),
                     Marca = table.Column<string>(nullable: true),
                     Modelo = table.Column<string>(nullable: true),
-                    Preco = table.Column<double>(nullable: false),
+                    Preco = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
                     IVA = table.Column<double>(nullable: false),
                     TipoProdutoFK = table.Column<int>(nullable: false),
                     CompraFK = table.Column<int>(nullable: false)
@@ -234,14 +234,14 @@ namespace DigitalCore.Migrations
                 columns: new[] { "ID", "CompraFK", "Descricao", "IVA", "Marca", "Modelo", "NumSerie", "Preco", "TipoProdutoFK" },
                 values: new object[,]
                 {
-                    { 1, 1, "HP Omen 880-106Np", 23.0, "HP", "Omen 880", "123456789", 1200.0, 1 },
-                    { 2, 1, "Toshiba TR200 3D TLC SATA III", 23.0, "Toshiba", "TR200", "123456790", 55.0, 5 },
-                    { 5, 4, "Samsung 500GB EVO 850", 23.0, "Samsung", "EVO 850", "123456793", 125.0, 5 },
-                    { 6, 5, "Kingston 120GB SSD A400 SATA III", 23.0, "Kingston", "A400", "123456794", 35.0, 5 },
-                    { 7, 5, "HP 15-bs109np", 23.0, "HP", "bs109np", "123456795", 550.0, 3 },
-                    { 8, 5, "Asus Zenbook UX430UA-78DHDCB1", 23.0, "Asus", "UX430UA", "123456796", 1200.0, 3 },
-                    { 3, 2, "Asus ROG GR8II-T022Z Auta", 23.0, "Asus", "ROG GR8II", "123456791", 950.0, 1 },
-                    { 4, 3, "Asus D320MT", 23.0, "Asus", "D320MT", "123456792", 600.0, 1 }
+                    { 1, 1, "HP Omen 880-106Np", 23.0, "HP", "Omen 880", "123456789", 1200m, 1 },
+                    { 2, 1, "Toshiba TR200 3D TLC SATA III", 23.0, "Toshiba", "TR200", "123456790", 55m, 5 },
+                    { 5, 4, "Samsung 500GB EVO 850", 23.0, "Samsung", "EVO 850", "123456793", 125m, 5 },
+                    { 6, 5, "Kingston 120GB SSD A400 SATA III", 23.0, "Kingston", "A400", "123456794", 35m, 5 },
+                    { 7, 5, "HP 15-bs109np", 23.0, "HP", "bs109np", "123456795", 550m, 3 },
+                    { 8, 5, "Asus Zenbook UX430UA-78DHDCB1", 23.0, "Asus", "UX430UA", "123456796", 1200m, 3 },
+                    { 3, 2, "Asus ROG GR8II-T022Z Auta", 23.0, "Asus", "ROG GR8II", "123456791", 950m, 1 },
+                    { 4, 3, "Asus D320MT", 23.0, "Asus", "D320MT", "123456792", 600m, 1 }
                 });
 
             migrationBuilder.InsertData(

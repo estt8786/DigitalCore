@@ -13,10 +13,7 @@ namespace DigitalCore.Models
         {
             // inicializar a lista de produtos comprados
             ListaDeProdutos = new HashSet<Produto>();
-
-            
         }
-
 
         /// <summary>
         /// PK da tabela TipoProduto
@@ -28,7 +25,6 @@ namespace DigitalCore.Models
         /// Descrição/identificação do Tipo de Produto
         /// </summary>
         public string Descricao { get; set; }
-
 
         /// <summary>
         /// Lista os Produtos de um TipoProdutos

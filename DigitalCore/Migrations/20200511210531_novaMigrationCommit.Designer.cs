@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigitalCore.Migrations
 {
     [DbContext(typeof(DigitalCoreDB))]
-    [Migration("20200503111912_novaMigrationCommit")]
+    [Migration("20200511210531_novaMigrationCommit")]
     partial class novaMigrationCommit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -574,8 +574,8 @@ namespace DigitalCore.Migrations
                     b.Property<string>("NumSerie")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Preco")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Preco")
+                        .HasColumnType("decimal(8,2)");
 
                     b.Property<int>("TipoProdutoFK")
                         .HasColumnType("int");
@@ -598,7 +598,7 @@ namespace DigitalCore.Migrations
                             Marca = "HP",
                             Modelo = "Omen 880",
                             NumSerie = "123456789",
-                            Preco = 1200.0,
+                            Preco = 1200m,
                             TipoProdutoFK = 1
                         },
                         new
@@ -610,7 +610,7 @@ namespace DigitalCore.Migrations
                             Marca = "Toshiba",
                             Modelo = "TR200",
                             NumSerie = "123456790",
-                            Preco = 55.0,
+                            Preco = 55m,
                             TipoProdutoFK = 5
                         },
                         new
@@ -622,7 +622,7 @@ namespace DigitalCore.Migrations
                             Marca = "Asus",
                             Modelo = "ROG GR8II",
                             NumSerie = "123456791",
-                            Preco = 950.0,
+                            Preco = 950m,
                             TipoProdutoFK = 1
                         },
                         new
@@ -634,7 +634,7 @@ namespace DigitalCore.Migrations
                             Marca = "Asus",
                             Modelo = "D320MT",
                             NumSerie = "123456792",
-                            Preco = 600.0,
+                            Preco = 600m,
                             TipoProdutoFK = 1
                         },
                         new
@@ -646,7 +646,7 @@ namespace DigitalCore.Migrations
                             Marca = "Samsung",
                             Modelo = "EVO 850",
                             NumSerie = "123456793",
-                            Preco = 125.0,
+                            Preco = 125m,
                             TipoProdutoFK = 5
                         },
                         new
@@ -658,7 +658,7 @@ namespace DigitalCore.Migrations
                             Marca = "Kingston",
                             Modelo = "A400",
                             NumSerie = "123456794",
-                            Preco = 35.0,
+                            Preco = 35m,
                             TipoProdutoFK = 5
                         },
                         new
@@ -670,7 +670,7 @@ namespace DigitalCore.Migrations
                             Marca = "HP",
                             Modelo = "bs109np",
                             NumSerie = "123456795",
-                            Preco = 550.0,
+                            Preco = 550m,
                             TipoProdutoFK = 3
                         },
                         new
@@ -682,7 +682,7 @@ namespace DigitalCore.Migrations
                             Marca = "Asus",
                             Modelo = "UX430UA",
                             NumSerie = "123456796",
-                            Preco = 1200.0,
+                            Preco = 1200m,
                             TipoProdutoFK = 3
                         });
                 });

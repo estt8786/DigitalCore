@@ -9,7 +9,6 @@ namespace DigitalCore.Models
 {
     public class Compra
     {
-
         public Compra()
         {
             // inicializar a lista de produtos comprados

@@ -47,7 +47,8 @@ namespace DigitalCore.Models
         /// <summary>
         /// Preço do Produto
         /// </summary>
-        public double Preco { get; set; }
+        [Column(TypeName = "decimal(8,2)")]
+        public decimal Preco { get; set; }
 
         /// <summary>
         /// IVA a aplicar sobre Produto
