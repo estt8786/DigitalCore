@@ -31,19 +31,17 @@ namespace DigitalCore
             services.AddControllersWithViews();
 
             //****************************************************************************
-            // especificação do 'tipo' e 'localização' da BD
+            // especificação do 'tipo' e 'localização' da BD + 
+            // ativação do "Lazy Loading"
             services.AddDbContext<DigitalCoreDB>(options =>
                options.UseSqlServer(
-                   Configuration.GetConnectionString("ConnectionDB")));
+                   Configuration.GetConnectionString("ConnectionDB")))
+
+                // ativar este metodo para ver a listagem das vendas/produtos no metodo Details !!!!! (descomentar a linha abaixo)
+                //.UseLazyLoadingProxies()
+                ;
             //****************************************************************************
         }
-
-
-
-
-
-
-
 
 
 

@@ -7,14 +7,28 @@ using System.Threading.Tasks;
 
 namespace DigitalCore.Data
 {
+    /// <summary>
+    /// Representa a BD do nosso sistema (Loja Virtual)
+    /// á custa de um ORM (object relation Model) - Entity FrameWork Core (mais uma camada sobre o nosso serviço)
+    /// </summary>
     public class DigitalCoreDB : DbContext
     {
+        /// <summary>
+        /// construtor que define e configura a Base de Dados
+        /// </summary>
+        /// <param name="options">parametros de configuracao</param>
         public DigitalCoreDB(DbContextOptions<DigitalCoreDB> options) : base(options) { }
 
         //----------------------------------------------------------------------
 
+        // // ativação do Lazy Loading
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+        //    optionsBuilder.UseLazyLoadingProxies();
+        //}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             // insert DB seed
             modelBuilder.Entity<Cliente>().HasData(
                new Cliente { ID = 1, Nome = "Miguel Sousa", Username = "msousa", Password = "123", Morada = "Rua do Comércio, Nº18", CodPostal = "2300-243", Localidade = "Tomar", Email = "msousa@gmail.com", Telefone = "249123456", NIF = "115347923" },

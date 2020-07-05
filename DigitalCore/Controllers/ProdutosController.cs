@@ -15,12 +15,17 @@ namespace DigitalCore.Controllers
     /// </summary>
     public class ProdutosController : Controller
     {
+        /// <summary>
+        /// este atributo representa uma referência à nossa BD - Base Dados
+        /// </summary>
         private readonly DigitalCoreDB _context;
 
         public ProdutosController(DigitalCoreDB context)
         {
             _context = context;
         }
+
+
 
         // GET: Produtos
         public async Task<IActionResult> Index()
